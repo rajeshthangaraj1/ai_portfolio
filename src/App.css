@@ -15,86 +15,24 @@
 
 .App-header {
   background-color: #282c34;
-  padding: 20px; /* Reduced padding */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin-bottom: 20px; /* Added margin to separate from content */
 }
 
 .App-link {
   color: #61dafb;
 }
 
-/* Remove App-logo animation as logo is removed */
-/* @keyframes App-logo-spin { ... } */
-
-/* General section styling */
-section {
-  padding: 20px;
-  margin: 15px 0;
-  border-bottom: 1px solid #eee;
-}
-
-section h2 {
-  margin-top: 0;
-  color: #333;
-}
-
-/* About Us Section */
-#about-us img {
-  max-width: 200px; /* Specific width for placeholder */
-  height: auto;
-  display: block;
-  margin: 10px auto;
-  border: 1px solid #ddd;
-  padding: 5px;
-}
-
-/* Resume Section */
-#resume a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-#resume a:hover {
-  background-color: #0056b3;
-}
-
-/* Projects Section */
-#projects .project-item { /* Assuming we'll wrap projects in .project-item divs or style based on direct div children */
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-#projects h3 {
-  color: #555;
-}
-
-#projects img {
-  max-width: 150px; /* Specific width for placeholder */
-  height: auto;
-  display: block;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-}
-
-/* Styling for direct div children of #projects as per current App.js */
-#projects > div {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
